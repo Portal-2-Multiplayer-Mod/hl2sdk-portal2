@@ -59,7 +59,7 @@ public:
 	{
 		if ( pData )
 		{
-			MemAlloc_Free(pData);
+			g_pMemAlloc->Free(pData);
 		}
 	}
 
@@ -67,7 +67,7 @@ public:
 	{
 		if ( pData )
 		{
-			MemAlloc_Free(pData, pFileName, nLine );
+			g_pMemAlloc->Free(pData, pFileName, nLine );
 		}
 	}
 };
